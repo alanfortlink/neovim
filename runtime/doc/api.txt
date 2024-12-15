@@ -3575,6 +3575,7 @@ nvim_get_autocmds({opts})                                *nvim_get_autocmds()*
     These examples will get autocommands matching ALL the given criteria: >lua
         -- Matches all criteria
         autocommands = vim.api.nvim_get_autocmds({
+          id = 1
           group = "MyGroup",
           event = {"BufEnter", "BufWinEnter"},
           pattern = {"*.c", "*.h"}

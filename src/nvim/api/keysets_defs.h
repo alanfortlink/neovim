@@ -258,6 +258,7 @@ typedef struct {
 
 typedef struct {
   OptionalKeys is_set__get_autocmds_;
+  Integer id;
   Union(String, ArrayOf(String)) event;
   Union(Integer, String) group;
   Union(String, ArrayOf(String)) pattern;

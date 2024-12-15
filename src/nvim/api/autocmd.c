@@ -237,6 +237,11 @@ Array nvim_get_autocmds(Dict(get_autocmds) *opts, Arena *arena, Error *err)
         continue;
       }
 
+      // Skip autocmds from invalid ids if passed.
+      if (opts->id != 0 && ac->id != opts->id) {
+        continue;
+      }
+
       // Skip autocmds from invalid groups if passed.
       if (group != 0 && ap->group != group) {
         continue;

@@ -1256,6 +1256,7 @@ function vim.api.nvim_get_all_options_info() end
 --- match any combination of them.
 ---
 --- @param opts vim.api.keyset.get_autocmds Dict with at least one of the following:
+--- - id (integer): the autocommand id to match against.
 --- - group (string|integer): the autocommand group name or id to match against.
 --- - event (string|array): event or events to match against `autocmd-events`.
 --- - pattern (string|array): pattern or patterns to match against `autocmd-pattern`.

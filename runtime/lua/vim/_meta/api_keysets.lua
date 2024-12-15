@@ -112,6 +112,7 @@ error('Cannot require a meta file')
 --- @field output? boolean
 
 --- @class vim.api.keyset.get_autocmds
+--- @field id? integer
 --- @field event? string|string[]
 --- @field group? integer|string
 --- @field pattern? string|string[]
